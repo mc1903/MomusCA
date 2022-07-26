@@ -4,7 +4,7 @@ Script: Import_mc1903_CodeSigning_Certificates.ps1
 Author:	Martin Cooper (@mc1903)
 Date: 26-07-2022
 GitHub Repo: https://github.com/mc1903/MomusCA
-Version: 1.0.2
+Version: 1.0.3
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Downloads and installs the 3 certificates required to trust my signed PowerShell scripts/modules.
@@ -29,7 +29,7 @@ Else {
     $certStore = "CurrentUser"
 }
 
-$certsBaseURL = "https://raw.githubusercontent.com/mc1903/MomusCA/main/certs"
+$certsBaseURL = "https://raw.githubusercontent.com/mc1903/MomusCA/main/certs/"
 $certsList = @(
         @{
             name = "Momus Root CA Certificate"
